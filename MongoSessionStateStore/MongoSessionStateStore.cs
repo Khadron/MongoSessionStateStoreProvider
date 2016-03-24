@@ -51,7 +51,6 @@ namespace MongoSessionStateStore
                 .WithWriteConcern(_writeConcern);
         }
 
-
         #region Override
 
         public override void Initialize(string name, NameValueCollection config)
@@ -92,7 +91,7 @@ namespace MongoSessionStateStore
             int writeConcernLevel = 1;
             if (config["writeConcernLevel"] != null)
             {
-                if (int.TryParse(config["writeConcernLevel"], out writeConcernLevel))
+                if (!int.TryParse(config["writeConcernLevel"], out writeConcernLevel))
                     throw new ProviderException("writeConcernLevel must be a valid integer");
             }
 
@@ -141,6 +140,21 @@ namespace MongoSessionStateStore
             IMongoCollection<BsonDocument> sessionCollection = GetSessionCollection();
 
             //todo:
+            var update = Builders<BsonDocument>.Update.Set("Locked", false).Set("Expires", DateTime.Now.AddMinutes(_cfgSection.Timeout.TotalMinutes).ToUniversalTime());
+
+            try
+            {
+                sessionCollection.UpdateOne(GetIdentity(id), update);
+            }
+            catch (MongoBulkWriteException ex)
+            {
+                if (RecordException)
+                {
+                    Logger.Instance.Write(ex.Message, MessageType.Error);
+                }
+
+                throw new ProviderException(ex.Message);
+            }
         }
 
         public override void SetAndReleaseItemExclusive(HttpContext context, string id, SessionStateStoreData item, object lockId, bool newItem)
@@ -178,29 +192,61 @@ namespace MongoSessionStateStore
                         DateTime.Now.AddMinutes(item.Timeout).ToUniversalTime())
                         .Set("SessionItems", sessionItems)
                         .Set("Locked", false);
-                    sessionCollection.UpdateOne(GetIdentity(id, Builders<BsonDocument>.Filter), update);
+                    sessionCollection.UpdateOne(GetIdentity(id), update);
 
                 }
             }
-            catch (Exception ex)
+            catch (MongoBulkWriteException ex)
             {
 
                 if (RecordException)
                 {
                     Logger.Instance.Write(ex.Message, MessageType.Error);
                 }
-                throw;
+                throw new ProviderException(ex.Message);
             }
         }
 
         public override void RemoveItem(HttpContext context, string id, object lockId, SessionStateStoreData item)
         {
-            throw new NotImplementedException();
+
+            IMongoCollection<BsonDocument> sessionCollection = GetSessionCollection();
+
+            var filter = Builders<BsonDocument>.Filter;
+            var query = filter.Eq("_id", id) & filter.Eq("ApplicationName", _applicationName) & filter.Eq("LockId", (int)lockId);
+            try
+            {
+                sessionCollection.DeleteOne(query);
+            }
+            catch (MongoBulkWriteException ex)
+            {
+                if (RecordException)
+                {
+                    Logger.Instance.Write(ex.Message, MessageType.Error);
+                }
+                throw new ProviderException(ex.Message);
+            }
         }
 
         public override void ResetItemTimeout(HttpContext context, string id)
         {
-            throw new NotImplementedException();
+            IMongoCollection<BsonDocument> sessionCollection = GetSessionCollection();
+            try
+            {
+                var update = Builders<BsonDocument>.Update.Set("Expires",
+                    DateTime.Now.AddMinutes(_cfgSection.Timeout.TotalMinutes).ToUniversalTime());
+                sessionCollection.UpdateOne(GetIdentity(id), update);
+            }
+            catch (MongoBulkWriteException ex)
+            {
+                if (RecordException)
+                {
+                    Logger.Instance.Write(ex.Message, MessageType.Error);
+                }
+
+                throw new ProviderException(ex.Message);
+            }
+
         }
 
         /// <summary>
@@ -216,16 +262,42 @@ namespace MongoSessionStateStore
 
         public override void CreateUninitializedItem(HttpContext context, string id, int timeout)
         {
-            throw new NotImplementedException();
+            var doc = new BsonDocument
+           {
+               {"_id",id},
+               {"ApplicationName",_applicationName},
+               {"Created",DateTime.Now.ToUniversalTime()},
+               {"Expires",DateTime.Now.ToUniversalTime()},
+               {"LockDate",DateTime.Now.ToUniversalTime()},
+               {"LockId",0},
+               {"Timeout",timeout},
+               {"Locked",false},
+               {"SessionItems",""},
+               {"Flags",1}
+           };
+
+            IMongoCollection<BsonDocument> sessionCollection = GetSessionCollection();
+
+            try
+            {
+                sessionCollection.InsertOne(doc);
+            }
+            catch (MongoBulkWriteException ex)
+            {
+                if (RecordException)
+                {
+                    Logger.Instance.Write(ex.Message, MessageType.Error);
+                }
+                throw new ProviderException(ex.Message);
+            }
         }
 
         public override void EndRequest(HttpContext context)
         {
-            throw new NotImplementedException();
+            
         }
 
         #endregion
-
 
         private string Serialize(SessionStateItemCollection items)
         {
@@ -290,15 +362,13 @@ namespace MongoSessionStateStore
              */
             try
             {
-
                 if (_cfgSection.RegenerateExpiredSessionId)
                 {
                     //todo:Cookieless 
                 }
                 else
                 {
-
-                    var conditions = GetIdentity(id, filter);
+                    var conditions = GetIdentity(id);
                     var first = sessionCollection.Find(conditions).FirstOrDefault();
 
                     if (first != null)
@@ -345,7 +415,7 @@ namespace MongoSessionStateStore
                 }
 
             }
-            catch (Exception ex)
+            catch (MongoBulkWriteException ex)
             {
 
                 if (_recordExceptions)
@@ -358,9 +428,10 @@ namespace MongoSessionStateStore
             return item;
         }
 
-        private FilterDefinition<BsonDocument> GetIdentity(string id, FilterDefinitionBuilder<BsonDocument> filter)
+        private FilterDefinition<BsonDocument> GetIdentity(string id)
         {
-            return filter.Eq("_id", id) & filter.Eq("ApplicationName", ApplicationName);
+            var filter = Builders<BsonDocument>.Filter;
+            return filter.Eq("_id", id) & filter.Eq("ApplicationName", _applicationName);
         }
     }
 }

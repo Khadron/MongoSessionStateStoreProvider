@@ -13,3 +13,10 @@ E:\Session\MongoSessionStateStore\MongoSessionStateStore\bin\Debug\MongoDB.Drive
 E:\Session\MongoSessionStateStore\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.csprojResolveAssemblyReference.cache
 E:\Session\MongoSessionStateStore\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.dll
 E:\Session\MongoSessionStateStore\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.pdb
+D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore\bin\Debug\MongoSessionStateStore.dll
+D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore\bin\Debug\MongoSessionStateStore.pdb
+D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore\bin\Debug\MongoDB.Bson.dll
+D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore\bin\Debug\MongoDB.Driver.Core.dll
+D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore\bin\Debug\MongoDB.Driver.dll
+D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.dll
+D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.pdb
