@@ -1,0 +1,4 @@
+D:\MyProjects\SessionStateStore\SessionStateStore\bin\Debug\SessionStateStore.dll
+D:\MyProjects\SessionStateStore\SessionStateStore\bin\Debug\SessionStateStore.pdb
+D:\MyProjects\SessionStateStore\SessionStateStore\obj\Debug\SessionStateStore.dll
+D:\MyProjects\SessionStateStore\SessionStateStore\obj\Debug\SessionStateStore.pdb

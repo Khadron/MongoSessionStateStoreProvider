@@ -1,0 +1,15 @@
+E:\Session\MongoSessionStateStoreProvider\MongoSessionStateStoreProvider\bin\Debug\MongoSessionStateStore.dll
+E:\Session\MongoSessionStateStoreProvider\MongoSessionStateStoreProvider\bin\Debug\MongoSessionStateStore.pdb
+E:\Session\MongoSessionStateStoreProvider\MongoSessionStateStoreProvider\bin\Debug\MongoDB.Bson.dll
+E:\Session\MongoSessionStateStoreProvider\MongoSessionStateStoreProvider\bin\Debug\MongoDB.Driver.Core.dll
+E:\Session\MongoSessionStateStoreProvider\MongoSessionStateStoreProvider\bin\Debug\MongoDB.Driver.dll
+E:\Session\MongoSessionStateStoreProvider\MongoSessionStateStoreProvider\obj\Debug\MongoSessionStateStore.dll
+E:\Session\MongoSessionStateStoreProvider\MongoSessionStateStoreProvider\obj\Debug\MongoSessionStateStore.pdb
+E:\Session\MongoSessionStateStore\MongoSessionStateStore\bin\Debug\MongoSessionStateStore.dll
+E:\Session\MongoSessionStateStore\MongoSessionStateStore\bin\Debug\MongoSessionStateStore.pdb
+E:\Session\MongoSessionStateStore\MongoSessionStateStore\bin\Debug\MongoDB.Bson.dll
+E:\Session\MongoSessionStateStore\MongoSessionStateStore\bin\Debug\MongoDB.Driver.Core.dll
+E:\Session\MongoSessionStateStore\MongoSessionStateStore\bin\Debug\MongoDB.Driver.dll
+E:\Session\MongoSessionStateStore\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.csprojResolveAssemblyReference.cache
+E:\Session\MongoSessionStateStore\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.dll
+E:\Session\MongoSessionStateStore\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.pdb
