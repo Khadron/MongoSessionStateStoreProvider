@@ -167,7 +167,9 @@ namespace MongoSessionStateStore
 
             try
             {
-                if (newItem)
+                var single = sessionCollection.Find(r => r["_id"].Equals(id)).SingleOrDefault();
+
+                if (single==null)
                 {
                     var insertDoc = new BsonDocument
                     {
@@ -185,8 +187,7 @@ namespace MongoSessionStateStore
                     //todo:写入操作
                     sessionCollection.InsertOne(insertDoc);
 
-                }
-                else
+                }else
                 {
                     var update = Builders<BsonDocument>.Update.Set("Expires",
                         DateTime.Now.AddMinutes(item.Timeout).ToUniversalTime())
@@ -262,25 +263,34 @@ namespace MongoSessionStateStore
 
         public override void CreateUninitializedItem(HttpContext context, string id, int timeout)
         {
-            var doc = new BsonDocument
-           {
-               {"_id",id},
-               {"ApplicationName",_applicationName},
-               {"Created",DateTime.Now.ToUniversalTime()},
-               {"Expires",DateTime.Now.ToUniversalTime()},
-               {"LockDate",DateTime.Now.ToUniversalTime()},
-               {"LockId",0},
-               {"Timeout",timeout},
-               {"Locked",false},
-               {"SessionItems",""},
-               {"Flags",1}
-           };
+          
 
             IMongoCollection<BsonDocument> sessionCollection = GetSessionCollection();
-
+           
             try
             {
-                sessionCollection.InsertOne(doc);
+                var single = sessionCollection.Find(r => r["_id"].Equals(id)).SingleOrDefault();
+
+                if (single == null)
+                {
+                    var doc = new BsonDocument{
+                        { "_id",id},
+                        { "ApplicationName",_applicationName},
+                        { "Created",DateTime.Now.ToUniversalTime()},
+                        { "Expires",DateTime.Now.ToUniversalTime()},
+                        { "LockDate",DateTime.Now.ToUniversalTime()},
+                        { "LockId",0},{"Timeout",timeout},{"Locked",false},
+                        { "SessionItems",""},
+                        { "Flags",1}
+                    };
+                    sessionCollection.InsertOne(doc);
+                }
+                else
+                {
+                    var update = Builders<BsonDocument>.Update.Set("Flags", 0);
+                    sessionCollection.UpdateOne(GetIdentity(id), update);
+                   
+                }
             }
             catch (MongoBulkWriteException ex)
             {
