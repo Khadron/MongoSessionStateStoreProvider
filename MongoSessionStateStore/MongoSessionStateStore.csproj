@@ -53,13 +53,13 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\Extension.cs" />
     <Compile Include="Logger.cs" />
-    <Compile Include="MongoSessionStateStore.cs">
+    <Compile Include="MongoSessionStateStoreProvider.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,14 +70,8 @@
     <Compile Include="Serialization\UnSerializedItem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DLL\MongoDB.Bson.dll" />
-    <Content Include="DLL\MongoDB.Driver.Core.dll" />
-    <Content Include="DLL\MongoDB.Driver.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

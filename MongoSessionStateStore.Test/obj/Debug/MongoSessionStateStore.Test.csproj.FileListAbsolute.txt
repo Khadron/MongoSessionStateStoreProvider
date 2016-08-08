@@ -1,74 +1,46 @@
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\csc.exe
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\System.Collections.Immutable.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\System.Reflection.Metadata.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\vbc.exe
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\VBCSCompiler.exe
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\VBCSCompiler.exe.config
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.Test.dll.config
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.Test.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.Test.pdb
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Antlr3.Runtime.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\EntityFramework.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\EntityFramework.SqlServer.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.AspNet.Identity.Core.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.AspNet.Identity.Owin.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Host.SystemWeb.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.Cookies.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.Facebook.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.Google.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.OAuth.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.Twitter.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Web.Infrastructure.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Newtonsoft.Json.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Owin.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Helpers.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Mvc.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Optimization.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Razor.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.WebPages.Deployment.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.WebPages.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.WebPages.Razor.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\WebGrease.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoDB.Driver.Core.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoDB.Driver.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoDB.Bson.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.pdb
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Helpers.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Mvc.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Optimization.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Razor.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.WebPages.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.WebPages.Deployment.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.WebPages.Razor.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Antlr3.Runtime.pdb
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Newtonsoft.Json.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\EntityFramework.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\EntityFramework.SqlServer.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.AspNet.Identity.Core.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.AspNet.Identity.Owin.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Host.SystemWeb.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.Facebook.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.Cookies.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.OAuth.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.Google.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.Twitter.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\obj\Debug\MongoSessionStateStore.Test.csprojResolveAssemblyReference.cache
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\obj\Debug\MongoSessionStateStore.Test.dll
-D:\Personal\MyProjects\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\obj\Debug\MongoSessionStateStore.Test.pdb
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\csc.exe
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\vbc.exe
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\VBCSCompiler.exe
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.Test.dll.config
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.Test.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.Test.pdb
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Helpers.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Mvc.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Razor.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Webpages.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Webpages.Razor.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoDB.Driver.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoDB.Driver.Core.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoDB.Bson.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoSessionStateStore.pdb
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Razor.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Webpages.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Webpages.Razor.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Helpers.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\System.Web.Mvc.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoDB.Driver.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\MongoDB.Bson.xml
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\obj\Debug\MongoSessionStateStore.Test.csprojResolveAssemblyReference.cache
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\obj\Debug\MongoSessionStateStore.Test.dll
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore.Test\obj\Debug\MongoSessionStateStore.Test.pdb
