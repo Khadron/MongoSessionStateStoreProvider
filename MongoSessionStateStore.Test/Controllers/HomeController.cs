@@ -10,13 +10,18 @@ namespace MongoSessionStateStore.Test.Controllers
     {
         public ActionResult Index()
         {
-            Session["test"] = "hehe";
+            //Session["test"] = "hehe";
+            Session["khadron2"] = "k";
             return View();
         }
 
         public ActionResult Print()
         {
-            ViewBag.Test = Session["test"];
+            //ViewBag.Test = Session["test"];
+            //ViewBag.Test = Session["hehe"];
+            ViewBag.Test = Session["khadron2"];
+            Session.Abandon();
+
             return View();
         }
     }

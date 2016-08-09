@@ -29,3 +29,4 @@ C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateSt
 C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore\bin\Debug\MongoDB.Driver.xml
 C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.dll
 C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.pdb
+C:\Users\Qiang Kong\Documents\MongoSessionStateStoreProvider\MongoSessionStateStore\obj\Debug\MongoSessionStateStore.csprojResolveAssemblyReference.cache
